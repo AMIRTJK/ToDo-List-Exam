@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Table</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="add-new">
+          <button class="btn-add">+Add New</button>
+        </div>
+        <table class="wrapper-table">
+          <tr class="header-list">
+            <th class="full-name">Full Name</th>
+            <th>Type</th>
+            <th>Publish Date</th>
+            <th>Review format</th>
+            <th colspan="4" class="action">Action</th>
+          </tr>
+          <table class="wrapper-table table"></table>
+          <!-- <tr class="data-list">
+            <td>1.Alex Mitchel</td>
+            <td>Student</td>
+            <td>25 march 2023</td>
+            <td>writer</td>
+            <td class="btn-info ml-td"><p>i</p></td>
+            <td class="btn-edit ml-td"><p>Edit</p></td>
+            <td class="btn-delete ml-td"><p>Delete</p></td>
+            <td class="btn-checkbox ml-td"><input type="checkbox" /></td>
+          </tr>
+          <tr class="data-list">
+            <td>2.Mike Tyson</td>
+            <td>Graduates</td>
+            <td>25 march 2023</td>
+            <td>boxer</td>
+            <td class="btn-info ml-td"><p>i</p></td>
+            <td class="btn-edit ml-td"><p>Edit</p></td>
+            <td class="btn-delete ml-td"><p>Delete</p></td>
+            <td class="ml-td"><input type="checkbox" /></td>
+          </tr> -->
+        </table>
+        <!-- Modal Add -->
+        <div class="modal-bg">
+          <div class="modal-add">
+            <div class="modal-add-content">
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="inp-add-fullname"
+              />
+              <input type="text" placeholder="Type" class="inp-add-type" />
+              <input
+                type="text"
+                placeholder="Publish Date"
+                class="inp-add-publish"
+              />
+              <input
+                type="text"
+                placeholder="Review Format"
+                class="inp-add-review"
+              />
+              <div class="btn-add-close">
+                <button class="add-post">Add</button>
+                <button class="close-modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal Edit -->
+        <div class="modal-bg-edit">
+          <div class="modal-edit">
+            <div class="modal-edit-content">
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="inp-edit-fullname"
+              />
+              <input type="text" placeholder="Type" class="inp-edit-type" />
+              <input
+                type="text"
+                placeholder="Publish Date"
+                class="inp-edit-publish"
+              />
+              <input
+                type="text"
+                placeholder="Review Format"
+                class="inp-edit-review"
+              />
+              <div class="btn-edit-close">
+                <button class="edit-post">Edit</button>
+                <button class="close-modal-edit">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

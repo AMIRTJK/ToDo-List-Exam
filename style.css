@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #c6e1e7;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.wrapper {
+  margin-top: 200px;
+}
+
+.add-new {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+button.btn-add {
+  padding: 10px 20px;
+  border-radius: 12.5px;
+  background-color: #73aad9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s all;
+  position: absolute;
+}
+button.btn-add:hover {
+  background-color: #6d9fcb;
+}
+button.btn-add:active {
+  border: 1px solid #5783aa;
+}
+
+table.wrapper-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  text-align: center;
+}
+
+th {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+td {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+th:first-child {
+  border-top-left-radius: 10px;
+}
+th:last-child {
+  border-top-right-radius: 10px;
+}
+
+tr.header-list {
+  background-color: #b1b1b1;
+  height: 30px;
+}
+
+tr.data-list {
+  background-color: #fff;
+  height: 35px;
+}
+
+td.btn-edit p {
+  color: green;
+  cursor: pointer;
+}
+td.btn-delete p {
+  color: red;
+  cursor: pointer;
+}
+
+td input[type="checkbox"] {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.ml-td p {
+  margin: 0 10px;
+}
+
+.btn-info p {
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Modal Add */
+
+.modal-bg,
+.modal-bg-edit {
+  background-color: #0000002b;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.modal-add,
+.modal-edit {
+  border-radius: 10px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  width: 450px;
+}
+
+.modal-add-content,
+.modal-edit-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 30px;
+}
+
+.modal-add-content input,
+.modal-edit-content input {
+  width: 100%;
+  padding: 13px;
+  border-radius: 7px;
+  border: none;
+  background-color: #d3d3d3;
+}
+
+.modal-add-content input:focus,
+.modal-edit-content input:focus {
+  outline-color: #0e52cf;
+}
+
+.modal-add-content input::placeholder,
+.modal-edit-content input::placeholder {
+  color: #757575;
+  font-weight: 600;
+}
+
+.btn-add-close,
+.btn-edit-close {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btn-add-close button,
+.btn-edit-close button {
+  border-radius: 15px;
+  padding: 10px 25px;
+  border: none;
+  background-color: #73aad9;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-add-close button:hover,
+.btn-edit-close button:hover {
+  background-color: #6d9fcb;
+}
+
+.checked-line {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
